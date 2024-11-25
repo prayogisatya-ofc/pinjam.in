@@ -19,7 +19,7 @@
                                     Temukan berbagai koleksi buku menarik, dari fiksi hingga referensi akademik.<br class="d-none d-lg-block" />
                                     Dapatkan pengalaman peminjaman yang nyaman dengan proses yang sederhana dan transparan!
                                 </h2>
-                                <form action="" method="get" class="w-50 w-md-100">
+                                <form action="{{ route('books') }}" method="get" class="w-50 w-md-100">
                                     <div class="input-group rounded-pill">
                                         <input type="text" class="form-control border-primary" placeholder="Cari buku" name="search" aria-label="Cari buku" aria-describedby="basic-addon-search31">
                                         <button class="btn btn-primary" style="border-top-right-radius: 50rem; border-bottom-right-radius: 50rem;" type="submit"><i class="ti ti-search"></i></button>

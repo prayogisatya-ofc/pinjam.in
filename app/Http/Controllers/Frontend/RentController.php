@@ -28,7 +28,7 @@ class RentController extends Controller
             return redirect()->route('bags.index')->with('error', 'Yah.. Kantong mu kosong. Coba isi yaa..');
         }
 
-        if ($bags->count() > $settings['max_book_per_rent']) {
+        if ($bags->count() > $settings['max_book_per_rent'] || (Auth::user()->total_book_rented + $bags->count()) > $settings['max_book_per_rent']) {
             return redirect()->route('bags.index')->with('error', 'Maksimal jumlah peminjaman buku adalah ' . $settings['max_book_per_rent'] . ' buku per orang.');
         }
 
