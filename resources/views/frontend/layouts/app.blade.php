@@ -67,56 +67,29 @@
             <img src="{{ asset('assets/img/front-pages/backgrounds/footer-bg-light.png') }}" alt="footer bg"
                 class="footer-bg banner-bg-img z-n1" data-app-light-img="front-pages/backgrounds/footer-bg-light.png"
                 data-app-dark-img="front-pages/backgrounds/footer-bg-dark.png" />
-            <div class="container">
-                <div class="row gx-0 gy-6 g-lg-10">
-                    <div class="col-lg-5">
-                        <a href="landing-page.html" class="app-brand-link mb-6">
-                            <img src="{{ asset('assets/img/logo.svg') }}" alt="logo" width="32">
-                            <span class="app-brand-text demo footer-link fw-bold ms-2 ps-1">{{ config('app.name') }}</span>
-                        </a>
-                        <p class="footer-text footer-logo-description mb-6">
-                            Temukan berbagai koleksi buku menarik, dari fiksi hingga referensi akademik. Dapatkan pengalaman peminjaman yang nyaman dengan proses yang sederhana dan transparan!
-                        </p>
-                        <form class="footer-form" action="{{ route('books') }}" method="GET">
-                            <div class="input-group rounded-pill">
-                                <input type="text" class="form-control" placeholder="Cari buku" name="search"/>
-                                <button type="submit" class="btn btn-primary shadow-none" style="border-top-right-radius: 50rem; border-bottom-right-radius: 50rem;">
-                                    <i class="ti ti-search"></i>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <h6 class="footer-title mb-6">Tentang {{ config('app.name') }}</h6>
-                        <ul class="list-unstyled">
-                            <li class="mb-4">
-                                <a href="#" target="_blank" class="footer-link">Tentang Kami</a>
-                            </li>
-                            <li class="mb-4">
-                                <a href="#" target="_blank"
-                                    class="footer-link">Tentang Toko</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <h6 class="footer-title mb-6">Lainnya</h6>
-                        <ul class="list-unstyled">
-                            <li class="mb-4">
-                                <a href="#" class="footer-link">Kebijakan Privasi</a>
-                            </li>
-                            <li class="mb-4">
-                                <a href="#" class="footer-link">Hubungi Kami</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-4">
-                        <h6 class="footer-title mb-6">Download our app</h6>
-                        <a href="javascript:void(0);" class="d-block mb-4"><img
-                                src="{{ asset('assets/img/front-pages/landing-page/apple-icon.png') }}"
-                                alt="apple icon" /></a>
-                        <a href="javascript:void(0);" class="d-block"><img
-                                src="{{ asset('assets/img/front-pages/landing-page/google-play-icon.png') }}"
-                                alt="google play icon" /></a>
+            <div class="footer-top position-relative overflow-hidden z-1">
+                <img src="{{ asset('assets/img/front-pages/backgrounds/footer-bg-light.png') }}" alt="footer bg"
+                    class="footer-bg banner-bg-img z-n1" data-app-light-img="front-pages/backgrounds/footer-bg-light.png"
+                    data-app-dark-img="front-pages/backgrounds/footer-bg-dark.png" />
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 d-flex flex-column align-items-center">
+                            <a href="{{ route('home') }}" class="app-brand-link mb-6">
+                                <img src="{{ asset('assets/img/logo.svg') }}" alt="logo" width="32">
+                                <span class="app-brand-text demo footer-link fw-bold ms-2 ps-1">{{ config('app.name') }}</span>
+                            </a>
+                            <p class="footer-text text-center mb-6">
+                                Temukan berbagai koleksi buku menarik, dari fiksi hingga referensi akademik. Dapatkan pengalaman peminjaman yang nyaman dengan proses yang sederhana dan transparan!
+                            </p>
+                            <form class="footer-form" action="{{ route('books') }}" method="GET">
+                                <div class="input-group rounded-pill">
+                                    <input type="text" class="form-control" placeholder="Cari buku" name="search"/>
+                                    <button type="submit" class="btn btn-primary shadow-none" style="border-top-right-radius: 50rem; border-bottom-right-radius: 50rem;">
+                                        <i class="ti ti-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
